@@ -26,6 +26,8 @@ public class Launcher {
                 System.out.println("entre un nombre");
                 int n = scanner.nextInt();
                 System.out.println("fibonnaci de " + n + " est : " + fibo(n));
+            }else{
+                System.out.println("Unknown command");
             }
         }
     }
