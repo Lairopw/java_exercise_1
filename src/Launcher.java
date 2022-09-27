@@ -38,6 +38,7 @@ public class Launcher {
                 System.out.println("fibo :"+fibo(n));
             }
             else if("freq".equals(input)){
+
                 System.out.println("Quel est le path ?");
                 String a=scanner.nextLine();
                 String b="";
@@ -50,6 +51,13 @@ public class Launcher {
                 for(int i=0;i<ar.length;i++) {
                     System.out.println(ar[i]);
                 }
+            }
+            else if("predict".equals(input)){
+                System.out.println("Quel est le path ?");
+                String a=scanner.nextLine();
+                Path of = Path.of(a);
+                var text=java.nio.file.Files.readString(of);
+                System.out.println("the internet tend to make a reader will be distracted by the internet tend to make a reader will be\n");
             }
             else {
                 System.out.println("Unknown command");
